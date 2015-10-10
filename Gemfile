@@ -10,6 +10,8 @@ gem 'spring', :group => :development
 
 gem 'sqlite3'
 
+gem "ember-cli-rails"
+
 
 
 # To use ActiveModel has_secure_password
