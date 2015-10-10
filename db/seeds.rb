@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+20.times do
+
+	TodoItem.create(
+		title: Faker::Lorem.words.join(' '),
+		is_completed: [true, false].sample
+	)
+	
+end

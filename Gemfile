@@ -12,6 +12,18 @@ gem 'sqlite3'
 
 gem "ember-cli-rails"
 
+gem "faker"
+
+group :development, :test do
+
+	gem 'best_errors'
+	gem 'pry-rails'
+	gem 'pry-doc'
+	gem 'quiet_assets'
+	gem 'awesome_print'
+	
+end
+
 
 
 # To use ActiveModel has_secure_password
