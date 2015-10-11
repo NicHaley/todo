@@ -14,6 +14,8 @@ gem "ember-cli-rails"
 
 gem "faker"
 
+gem 'active_model_serializers', '~> 0.8.1'
+
 group :development, :test do
 
 	gem 'best_errors'
