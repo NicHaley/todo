@@ -1,0 +1,2 @@
+{{input type="checkbox" checked=todo.isComplete class="toggle"}}
+<label class="{{if todo.isComplete 'completed'}}" {{action "editTodo" on="doubleClick"}}>{{todo.title}}</label>
