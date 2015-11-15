@@ -1,7 +1,7 @@
 {{#if editing}}
-	{{input type="edit" value=todo.title action="submitTodo"}}
+	{{input type="edit" value=todo.title enter="submitTodo"}}
 {{else}}
-	{{input type="checkbox" checked=todo.isComplete class="toggle"}}
-	<label class="{{if todo.isComplete 'completed'}}" {{action "editTodo" on="doubleClick"}}>{{todo.title}}</label>
-	<button class="destroy"></button>
+	{{input type="checkbox" checked=todo.isCompleted class="toggle"}}
+	<label class="{{if todo.isCompleted 'completed'}}" {{action "editTodo" on="doubleClick"}}>{{todo.title}}</label>
+	<button class="destroy" {{action "deleteTodo"}}></button>
 {{/if}}

@@ -1,4 +1,4 @@
-{{todo-input submitTodo="createTodo" updateTodo="updateTodo" deleteTodo="deleteTodo"}}
-{{#todo-list}}
+{{todo-input action="createTodo"}}
+{{#todo-list todos=model}}
 	{{outlet}}
 {{/todo-list}}

@@ -1,6 +1,5 @@
-<ul id="todo-list">  
-  {{#each model as |todo|}}
-  	{{!-- Pass 'todo' into todo-item.hbs as 'todo' --}}
-    {{todo-item todo=todo}}
-  {{/each}}
+ <ul id="todo-list">  
+	{{#each model as |todo|}}
+		{{todo-item todo=todo deleteTodo="deleteTodo" updateTodo="updateTodo"}}
+	{{/each}}
 </ul>  

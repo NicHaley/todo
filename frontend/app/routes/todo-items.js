@@ -9,14 +9,15 @@ export default Ember.Route.extend({
 		createTodo(newTitle) {
 			this.store.createRecord('todo-item', {
 				title: newTitle,
-				isComplete: false
+				isCompleted: false
 			}).save();
 		},
 		updateTodo(todo) {
 			todo.save();
 		},
-		deleteTodo() {
-
+		deleteTodo(todo) {
+			console.log('shit happened');
+			todo.destroyRecord();
 		}
 	}
 });
